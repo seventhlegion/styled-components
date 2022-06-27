@@ -3,15 +3,13 @@ import { StyledHeader, Nav, Logo, Image} from './Style/Header.styled';
 import { Container } from './Style/Container.styled';
 import { Flex } from './Style/Flex.styled';
 import { Button } from './Style/Button.styled';
-import logo from './images/logo.svg'
-import illustration from './images/illustration-mockups.svg'
 
 export default function Header() {
   return (
     <StyledHeader>
       <Container>
         <Nav>
-          <Logo src={logo} alt={''}/>
+          <Logo src={'./images/logo.svg'} alt={''}/>
           <Button>Try It For Free</Button>
         </Nav>
         <Flex>
@@ -31,7 +29,7 @@ export default function Header() {
               Get Started For Free
             </Button>
           </div>
-          <Image src={illustration} alt={''}/>
+          <Image src={'./images/illustration-mockups.svg'} alt={''}/>
         </Flex>
       </Container>
     </StyledHeader>

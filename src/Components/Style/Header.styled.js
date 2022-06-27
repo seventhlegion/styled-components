@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.header};
     padding: 40px 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 `
 
 export const Nav = styled.nav`

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { StyledCard } from './Style/Card.styled';
 
 export default function Card({item: {id, title, body, image}}) {
-    const ali = require
   return (
-    <div>
+    <StyledCard layout={id % 2 === 0 && 'row-reverse'}>
         <div>
             <h2>
                 {title}
@@ -13,8 +13,8 @@ export default function Card({item: {id, title, body, image}}) {
             </p>
         </div>
         <div>
-            <img src={'./images/' + image} alt={''} />
+            <img src={`./images/${image}`} alt={''} />
         </div>
-    </div>
+    </StyledCard>
   )
 }
